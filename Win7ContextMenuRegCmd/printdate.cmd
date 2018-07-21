@@ -1,0 +1,1 @@
+@echo off & set TIME=%TIME: =0% & set DateTimeFn=%DATE:~10,4%-%DATE:~4,2%-%DATE:~7,2%_%TIME:~0,2%_%TIME:~3,2%_%TIME:~6,2% & echo %DateTimeFn% & pause > nul

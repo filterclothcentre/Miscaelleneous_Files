@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Duplicate File With Timestamp]
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\Duplicate File With Timestamp\command]
+@="cmd /Q /V:ON /E:ON /C \"set TIME=%%TIME: =0%% & set DateTimeFn=%%DATE:~10,4%%-%%DATE:~4,2%%-%%DATE:~7,2%%_!TIME:~0,2!-!TIME:~3,2!-!TIME:~6,2! &FOR %%G IN (\"%1\") do copy \"%1\" \"%%~nG_!DateTimeFn!%%~xG\"\""
